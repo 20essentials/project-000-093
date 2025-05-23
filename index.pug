@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Orbita at
+    link(rel="shortcut icon", href="assets/favicon.png", type="image/x-icon")
+    link(rel="stylesheet", href="style.css")
+  body
+    .container
+      .aro
+      .aro
+      .aro
+      .aro
+    script.
+      document.addEventListener('click', e => {
+        if (e.target.matches('.container')) {
+          [...e.target.querySelectorAll('.aro')].forEach(el => {
+            el.classList.toggle('coloreado');
+          });
+        }
+      });
